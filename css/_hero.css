@@ -1,0 +1,149 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.hero {
+  padding-top: 41px;
+  padding-bottom: 39px;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.hero__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.hero__wrap {
+  position: relative;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.hero__text {
+  margin-bottom: 19px;
+  line-height: 150%;
+}
+
+.hero__title_italic {
+  font-family: "Muller-Italic";
+  font-weight: 400;
+}
+
+@media (min-width: 576px) {
+  .hero__title {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 440px;
+    padding-top: 92px;
+    padding-bottom: 90px;
+  }
+
+  .hero__title {
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__container {
+    position: relative;
+    min-height: 200px;
+  }
+
+  .hero__wrap {
+    -ms-flex-preferred-size: calc(calc(100% / 12) * 8 - (var(--gap) - var(--gap) / 12 * 8));
+    flex-basis: calc(calc(100% / 12) * 8 - (var(--gap) - var(--gap) / 12 * 8));
+  }
+
+  .hero__container::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 50px;
+    width: 30%;
+    padding-top: 26%;
+    background-image: url("../img/mic-hero@1024.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__container {
+    position: relative;
+    min-height: 200px;
+  }
+
+  .hero__wrap {
+    -ms-flex-preferred-size: calc(calc(100% / 12) * 8 - (var(--gap) - var(--gap) / 12 * 8));
+    flex-basis: calc(calc(100% / 12) * 8 - (var(--gap) - var(--gap) / 12 * 8));
+  }
+
+  .hero__container::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 51px;
+    width: 30%;
+    padding-top: 26%;
+    background-image: url("../img/mic-hero@1024.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 101px;
+    padding-bottom: 95px;
+  }
+
+  .hero__container::after {
+    top: -68px;
+    right: 28px;
+    width: 31%;
+    padding-top: 31.7%;
+    background-image: url(../img/mic-hero.png);
+  }
+
+  .hero__wrap {
+    -ms-flex-preferred-size: calc(calc(100% / 12) * 7 - (var(--gap) - var(--gap) / 12 * 7));
+    flex-basis: calc(calc(100% / 12) * 7 - (var(--gap) - var(--gap) / 12 * 7));
+  }
+
+  .hero__title {
+    margin-bottom: 13px;
+  }
+
+  .hero__text {
+    max-width: 1042px;
+    margin-bottom: 44px;
+  }
+}

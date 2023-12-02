@@ -1,0 +1,317 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.playlists {
+  padding-top: 55px;
+  padding-bottom: 54px;
+}
+
+.playlists__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  row-gap: 22px;
+}
+
+.playlists__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -ms-flex-align: start;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.playlists__title {
+  margin-bottom: 11px;
+}
+
+.playlists__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gray);
+}
+
+.playlists__copy {
+  margin-bottom: 5px;
+}
+
+.playlists__menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 29px;
+  -moz-column-gap: 29px;
+  column-gap: 29px;
+  gap: var(--gap);
+}
+
+.playlists__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.playlists__card-column {
+  position: relative;
+  -ms-flex-preferred-size: calc(calc(100% / 12) * 6 - (var(--gap) - var(--gap) / 12 * 6));
+  flex-basis: calc(calc(100% / 12) * 6 - (var(--gap) - var(--gap) / 12 * 6));
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.playlists__card-image-wrap {
+  position: relative;
+  background-color: var(--lightcyan);
+}
+
+.playlists__card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.playlists__card-flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 20px;
+  padding: 2px 0 0 3px;
+  background-color: var(--dark);
+}
+
+.playlists__card-content {
+  height: 100%;
+  min-height: 46px;
+  padding: 9px 7px 8px 9px;
+  border: 1px solid var(--light-gray);
+}
+
+.playlists__card-title {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.playlists__card-text {
+  margin-bottom: 0;
+  font-size: 9px;
+  line-height: normal;
+  color: var(--gray);
+}
+
+@media (min-width: 428px) {
+  .playlists__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .playlists__card-image {
+    min-width: 70px;
+    max-width: 112px;
+  }
+
+  .playlists__card-flag {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    height: 20px;
+    padding-left: 4px;
+  }
+
+  .playlists__card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .playlists__card-title {
+    font-size: 13px;
+  }
+
+  .playlists__card-text {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .playlists__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .playlists__copy-icon {
+    min-width: 131px;
+  }
+
+  .playlists__card-image {
+    min-width: 90px;
+  }
+
+  .playlists__card-flag {
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 20px;
+    padding-top: 0;
+    padding-left: 4px;
+  }
+
+  .playlists__card-title {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+
+  .playlists__card-text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .playlists {
+    padding-top: 96px;
+    padding-bottom: 111px;
+  }
+
+  .playlists__wrap {
+    row-gap: 21px;
+  }
+
+  .playlists__title {
+    margin-bottom: 12px;
+  }
+
+  .playlists__copy {
+    margin-bottom: 2px;
+  }
+
+  .playlists__menu {
+    gap: var(--gap);
+  }
+
+  .playlists__card-image {
+    min-width: 112px;
+  }
+
+  .playlists__card-content {
+    padding: 39px 7px 38px 9px;
+  }
+}
+
+@media (min-width: 992px) {
+  .playlists {
+    padding-top: 95px;
+    padding-bottom: 94px;
+  }
+
+  .playlists__wrap {
+    row-gap: 20px;
+  }
+
+  .playlists__title {
+    margin-bottom: 12px;
+  }
+
+  .playlists__card-content {
+    padding-top: 39px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .playlists__card-column {
+    -ms-flex-preferred-size: calc(calc(100% / 12) * 4 - (var(--gap) - var(--gap) / 12 * 4));
+    flex-basis: calc(calc(100% / 12) * 4 - (var(--gap) - var(--gap) / 12 * 4));
+  }
+}
+
+@media (min-width:1200px) {
+  .playlists {
+    padding-top: 96px;
+  }
+
+  .playlists__content {
+    -ms-flex-preferred-size: calc(calc(100% / 12) * 4 - (var(--gap) - var(--gap) / 12 * 4));
+    flex-basis: calc(calc(100% / 12) * 4 - (var(--gap) - var(--gap) / 12 * 4));
+  }
+
+  .playlists__title {
+    margin-bottom: 11px;
+  }
+
+  .playlists__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .playlists__menu {
+    -ms-flex-preferred-size: calc(calc(100% / 12) * 8 - (var(--gap) - var(--gap) / 12 * 8));
+    flex-basis: calc(calc(100% / 12) * 8 - (var(--gap) - var(--gap) / 12 * 8));
+    padding-top: 12px;
+    row-gap: 29px;
+  }
+
+  .playlists__card-column {
+    -ms-flex-preferred-size: calc(calc(100% / 12) * 3 - (var(--gap) - var(--gap) / 12 * 3));
+    flex-basis: calc(calc(100% / 12) * 3 - (var(--gap) - var(--gap) / 12 * 3));
+  }
+
+  .playlists__card-image {
+    max-width: 100%;
+  }
+
+  .playlists__card-flag {
+    right: 0;
+    left: auto;
+  }
+
+  .playlists__card-content {
+    padding: 16px 8px 15px 15px;
+  }
+}

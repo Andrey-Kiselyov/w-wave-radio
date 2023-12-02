@@ -1,0 +1,340 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 17px 45px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--white);
+  text-align: center;
+  outline: none;
+  background-color: var(--violet);
+  background-repeat: no-repeat;
+  background-position: center left 14px;
+  background-size: 20px 20px;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  cursor: pointer;
+  -webkit-transition-timing-function: var(--short);
+  -o-transition-timing-function: var(--short);
+  transition-timing-function: var(--short);
+  -webkit-transition-duration: var(--time);
+  -o-transition-duration: var(--time);
+  transition-duration: var(--time);
+  -webkit-transition-property: color, background-color, border-color, -webkit-transform;
+  -o-transition-property: color, background-color, border-color, transform;
+  transition-property: color, background-color, border-color, -webkit-transform;
+  transition-property: color, background-color, border-color, transform;
+  transition-property: color, background-color, border-color, transform, -webkit-transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border: none;
+  border-radius: inherit;
+  outline: none;
+  background-color: var(--purple);
+  -webkit-transition-timing-function: var(--short);
+  -o-transition-timing-function: var(--short);
+  transition-timing-function: var(--short);
+  -webkit-transition-duration: var(--time);
+  -o-transition-duration: var(--time);
+  transition-duration: var(--time);
+  -webkit-transition-property: color, border-color, background-color, -webkit-transform;
+  -o-transition-property: color, transform, border-color, background-color;
+  transition-property: color, border-color, background-color, -webkit-transform;
+  transition-property: color, transform, border-color, background-color;
+  transition-property: color, transform, border-color, background-color, -webkit-transform;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.btn:focus-visible::before {
+  border: 2px solid var(--lilac);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.btn:active::before {
+  border-color: var(--lilac);
+  background-color: var(--lilac);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.btn_transparent {
+  display: inline-block;
+  padding: 7px 13px 8px 13px;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  background-color: inherit;
+}
+
+.btn_transparent:focus-visible {
+  color: var(--white);
+}
+
+.btn_transparent:focus-visible::before {
+  border-color: var(--violet);
+  background-color: var(--violet);
+}
+
+.btn_transparent:active {
+  color: var(--white);
+}
+
+.btn_transparent:active::before {
+  border-color: var(--lilac);
+  background-color: var(--lilac);
+}
+
+.btn_transparent_dark {
+  padding: 7px 29px;
+  border: 2px solid var(--dark);
+  color: var(--dark);
+  background-color: inherit;
+}
+
+.btn_transparent_dark::before {
+  background-color: var(--gray);
+}
+
+.btn_transparent_dark:focus-visible::before {
+  border-color: var(--dark);
+  background-color: var(--gray);
+}
+
+.btn_transparent_dark:focus-visible {
+  color: var(--white);
+}
+
+.btn_transparent_dark:active {
+  border-color: var(--dark);
+  color: var(--white);
+}
+
+.btn_transparent_dark:active::before {
+  background-color: var(--dark);
+}
+
+.btn_transparent_gold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 13px 14px 14px 14px;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background-color: var(--аnthracite);
+}
+
+.btn_transparent_gold::before {
+  background-color: var(--gold);
+}
+
+.btn_transparent_gold:focus-visible {
+  color: var(--dark);
+}
+
+.btn_transparent_gold:focus-visible::before {
+  border-color: var(--gold);
+  background-color: var(--dark-gold);
+}
+
+.btn_transparent_gold:active {
+  color: var(--dark);
+}
+
+.btn_transparent_gold:active::before {
+  border-color: var(--dark-gold);
+  background-color: var(--dark-gold);
+}
+
+.btn__image {
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 8px;
+  color: var(--dark);
+  -webkit-transition-timing-function: var(--short);
+  -o-transition-timing-function: var(--short);
+  transition-timing-function: var(--short);
+  -webkit-transition-duration: var(--time);
+  -o-transition-duration: var(--time);
+  transition-duration: var(--time);
+  -webkit-transition-property: color, fill;
+  -o-transition-property: color, fill;
+  transition-property: color, fill;
+  fill: var(--gold);
+}
+
+.btn_transparent_gold:focus-visible .btn__image {
+  color: var(--dark);
+  fill: var(--gold);
+}
+
+.btn_transparent_gold:active .btn__image {
+  color: var(--dark-gold);
+  fill: var(--dark);
+}
+
+@media (min-width: 428px) {
+  .btn_transparent_dark {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 26px 54px 25px 55px;
+    font-size: 20px;
+  }
+
+  .btn_transparent {
+    padding: 9px 18px 10px 18px;
+    font-size: 16px;
+  }
+
+  .btn_transparent_dark {
+    padding: 10px 54px 10px 54px;
+    font-size: 16px;
+  }
+
+  .btn_transparent_gold {
+    padding: 25px 12px 22px 12px;
+  }
+
+  .btn_transparent_gold::after {
+    left: 11px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn_transparent_dark {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn_transparent {
+    padding: 9px 18px 10px;
+  }
+
+  .btn_transparent_dark {
+    margin-bottom: 12px;
+  }
+}
+
+@media (any-hover: hover) {
+  .btn:hover:not(:active)::before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .btn_transparent:hover:not(:active) {
+    color: var(--white);
+  }
+
+  .btn_transparent_dark:hover:not(:active) {
+    border-color: var(--gray);
+    color: var(--white);
+  }
+
+  .btn_transparent_dark:hover:not(:active)::before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .btn_transparent_gold:hover:not(:active) {
+    color: var(--dark);
+  }
+
+  .btn_transparent_gold:hover:not(:active)::before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .btn_transparent_gold:hover:not(:active) .btn__image {
+    color: var(--gold);
+    fill: var(--dark);
+  }
+}
+
+@media (hover: none) {
+  .btn:active::before {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  .btn:active {
+    border-color: var(--lilac);
+    background-color: var(--lilac);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .btn_transparent:active::before {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  .btn_transparent_dark:active::before {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  .btn_transparent_dark:active {
+    border-color: var(--dark);
+    color: var(--white);
+    background-color: var(--dark);
+  }
+
+  .btn_transparent_gold:active::before {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  .btn_transparent_gold:active {
+    border-color: var(--gold);
+    color: var(--dark);
+    background-color: var(--gold);
+  }
+
+  .btn_transparent_gold:active .btn__image {
+    color: var(--gold);
+    fill: var(--dark);
+  }
+}

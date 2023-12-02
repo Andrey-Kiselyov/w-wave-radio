@@ -1,0 +1,59 @@
+:root {
+  /* шрифты */
+  --muller: "Muller";
+  --muller-italic: "Muller-Italic";
+  --regular: 400;
+  --bold: 700;
+  --default-font-size: 14px;
+  --default-line-height: 160%;
+
+  /* Цвета */
+  --white: #ffffff;
+  --light-gray: #E6E8EC;
+  --gray: #a1a6b4;
+  --dark: #121723;
+  --аnthracite: #292e39;
+  --lilac: #4f28a5;
+  --violet: #6d31ee;
+  --purple: #aa9dfa;
+  --gold: #f0d288;
+  --dark-gold: #bb973e;
+  --red: #d52b1e;
+  --lightcyan: #e0ffff;
+
+  /* Sizes */
+  --body-min-width: 320px;
+  --container-max-width: 1200px;
+  --container-padding: 32px;
+  --gap: 30px;
+
+  /* Transition */
+  --timing: ease-in-out;
+  --time: .3s;
+  --medium-time: .5s;
+}
+
+@media (min-width: 576px) {
+  :root {
+    --default-font-size: 16px;
+    --container-padding: 67px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 114px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --container-padding: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --container-padding: 45px;
+  }
+}
